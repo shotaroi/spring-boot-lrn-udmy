@@ -9,4 +9,15 @@ public class MyRestController {
     public String greet() {
         return "Hello world!";
     }
+
+    @GetMapping("/study")
+    public String getStudyDetail() {
+        return "Study programming";
+    }
+
+    @GetMapping("/fortune")
+    public String getDailyFortune() {
+        return "Super lucky today";
+    }
+
 }
