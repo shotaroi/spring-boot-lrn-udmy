@@ -11,7 +11,7 @@ public class Controller {
     private Ceo ceo;
 
     @Autowired
-    public Controller(@Qualifier("amazonCeo") Ceo theCeo) {
+    public Controller(Ceo theCeo) {
         ceo = theCeo;
     }
 
