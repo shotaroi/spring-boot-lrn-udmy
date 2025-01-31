@@ -1,4 +1,12 @@
 package com.shotaroi.springbootspringcore.common;
 
-public class AmazonCeo {
+import org.springframework.stereotype.Component;
+
+@Component
+public class AmazonCeo implements Ceo {
+    @Override
+    public String getDailyReport() {
+        return "Daily report to Jeff";
+    }
+
 }
