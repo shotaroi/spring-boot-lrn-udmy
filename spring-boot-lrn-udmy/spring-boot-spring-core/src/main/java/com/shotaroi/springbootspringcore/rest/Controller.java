@@ -11,7 +11,8 @@ public class Controller {
     private Ceo ceo;
 
     @Autowired
-    public Controller(Ceo theCeo) {
+    public Controller(@Qualifier("amazonCeo") Ceo theCeo) {
+        System.out.println("In constructor: " + getClass().getSimpleName());
         ceo = theCeo;
     }
 
