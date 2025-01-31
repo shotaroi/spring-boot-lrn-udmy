@@ -4,7 +4,7 @@ import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
 @Component
-@Lazy
+//@Lazy
 public class TeslaCeo implements Ceo {
     public TeslaCeo() {
         System.out.println("In constructor: " + getClass().getSimpleName());
