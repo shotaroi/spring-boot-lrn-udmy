@@ -1,4 +1,4 @@
-package com.shotaroi.springbootspringcore;
+package com.shotaroi.springbootspringcore.common;
 
 public interface Ceo {
     String getDailyReport();
