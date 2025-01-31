@@ -1,6 +1,6 @@
 package com.shotaroi.springbootspringcore.rest;
 
-import com.shotaroi.springbootspringcore.Ceo;
+import com.shotaroi.springbootspringcore.common.Ceo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
