@@ -1,5 +1,6 @@
 package com.shotaroi.springbootspringcore;
 
+import com.shotaroi.springbootspringcore.common.Ceo;
 import org.springframework.stereotype.Component;
 
 @Component
