@@ -9,14 +9,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class Controller {
     private Ceo ceo;
-    private Ceo anotherCeo;
+//    private Ceo anotherCeo;
 
     @Autowired
-    public Controller(@Qualifier("amazonCeo") Ceo theCeo,
-                      @Qualifier("amazonCeo") Ceo theAnotherCeo) {
+    public Controller(@Qualifier("amazonCeo") Ceo theCeo) {
         System.out.println("In constructor: " + getClass().getSimpleName());
         ceo = theCeo;
-        anotherCeo = theAnotherCeo;
     }
 
     @GetMapping("/dailyReport")
@@ -24,8 +22,8 @@ public class Controller {
         return ceo.getDailyReport();
     }
 
-    @GetMapping("/check")
-    public String check() {
-        return "Comparing beans: ceo == anotherCeo, " + (ceo == anotherCeo);
-    }
+//    @GetMapping("/check")
+//    public String check() {
+//        return "Comparing beans: ceo == anotherCeo, " + (ceo == anotherCeo);
+//    }
 }
